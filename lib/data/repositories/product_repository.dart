@@ -23,6 +23,7 @@ class ProductRepository implements IProductRepository {
 
       body['products'].map((item) {
         final ProductModel product = ProductModel.fromMap(item);
+
         products.add(product);
       }).toList();
 

@@ -20,6 +20,7 @@ class ProductStore {
 
     try {
       final result = await repository.getProducts();
+
       state.value = result;
     } on NotFoundException catch (e) {
       erro.value = e.message;

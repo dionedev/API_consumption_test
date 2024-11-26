@@ -4,7 +4,6 @@ class ProductModel {
   final String category;
   final double price;
   final double rating;
-  final String brand;
   final List<String> images;
   final String thumbnail;
 
@@ -14,7 +13,6 @@ class ProductModel {
     required this.category,
     required this.price,
     required this.rating,
-    required this.brand,
     required this.images,
     required this.thumbnail,
   });
@@ -26,7 +24,6 @@ class ProductModel {
       category: json['category'],
       price: json['price'] * 1.0,
       rating: json['rating'] * 1.0,
-      brand: json['brand'],
       images: List<String>.from((json['images'] as List)),
       thumbnail: json['thumbnail'],
     );
